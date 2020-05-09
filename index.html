@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="app.js"></script>
     <title>Prabesh Guragain | Web Developer</title>
   </head>
   <body>
@@ -26,13 +27,13 @@
           <h1>Prabesh Guragain</h1>
         </div>
         <ul>
-          <li><a class="active anim" href="/">Home</a></li>
-          <li><a class="anim" href="#">Projects</a></li>
-          <li><a class="anim" href="#">Contact</a></li>
+          <li><a class="anim" onclick="homeMechanism()">Home</a></li>
+          <li><a class="anim" onclick="projectMechanism()">Projects</a></li>
+          <li><a class="anim" onclick="contactMechanism()">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="intro">
+    <section id="home-container" class="intro">
       <div class="intro-text">
         <h2>Prabesh Guragain</h2>
         <h3>
@@ -256,6 +257,30 @@
         <img class="splash" src="/img/splash.svg" alt="" />
       </div>
     </section>
+
+    <div id="project-container" class="project-wrapper">
+
+    </div>
+
+    <!-- Contact section started -->
+
+    <div id="contact-container" class="contact-wrapper">
+      <div class="contact-intro">
+          <h2>contact me</h2>
+          <p>You can contact me througth this form. I'll try to replay you as soon as possible.</p>
+      </div>
+      <form class="contact-form">
+          <p class="text-caption">Full Name</p>
+          <input type="text" placeholder="Your Name">
+          <p class="text-caption">Email address</p>
+          <input type="email" placeholder="example@gmail.com">
+          <p class="text-caption">Enter message</p>
+          <textarea rows="8" placeholder="Enter your message"></textarea>
+          <input type="button" value="SEND">
+      </form>
+  </div>
+
+  <!-- Contact section ended -->
     <footer>
       <h4>Prabesh Guragain &copy; 2020</h4>
       <ul>
