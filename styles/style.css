@@ -3,7 +3,7 @@
     padding: 0;
   }
 
-  #contact-container, #project-container{
+  #contact-container, #project-cntr{
     display: none;
   }
   
@@ -235,6 +235,58 @@
       transform: rotateZ(360deg);
     }
   }
+
+  /* ------- Project section -------
+  ----------------------------------
+  =------------------------------ */
+
+  .project-container{
+    width: 70%;
+    height: 700px;
+    margin: auto;
+}
+
+.project-container h2{
+    text-align: center;
+    padding: 25px 0;
+    color: #38a4d3;
+}
+
+.project-container ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.project-container ul li img{
+    width: 360px;
+    height: 200px;
+    box-shadow: 0 0 20px 0 #38a4d3;
+}
+
+.project-container ul li p{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.project-btn{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.project-btn input{
+    border: none;
+    width: 150px;
+    height: 35px;
+    background-color: #38a4d3;
+    color: #fff;
+    cursor: pointer;
+}
+
 
   /* ------ Contact section -------
   ---------------------------------
